@@ -99,7 +99,6 @@ class BitcoinNode(object):
             except ProcessLookupError:
                 pass
         else:
-            self.proxy.stop()
             self.process.wait()
         if cleanup:
             self.cleanup()
